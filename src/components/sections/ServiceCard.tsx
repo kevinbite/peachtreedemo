@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight, LucideIcon } from 'lucide-react'
-import { Card, CardContent } from '@/components/ui/Card'
 
 interface ServiceCardProps {
   title: string

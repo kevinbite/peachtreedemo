@@ -26,7 +26,6 @@ export function VideoLoadingScreen({
   const [showBlackScreen, setShowBlackScreen] = useState(false)
   const [fadeOutBlackScreen, setFadeOutBlackScreen] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
-  const startTimeRef = useRef<number>(Date.now())
   const completedRef = useRef(false)
 
   // Maximum timeout fallback - force complete after maxLoadingTime
