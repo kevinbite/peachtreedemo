@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
 import '@/styles/globals.css'
 import { LoadingWrapper } from '@/components/loading/LoadingWrapper'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
+import { FloatingCTA } from '@/components/layout/FloatingCTA'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -60,7 +63,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
       <body className="font-sans antialiased">
-        <LoadingWrapper>{children}</LoadingWrapper>
+        <LoadingWrapper>
+          <Header />
+          <main className="pt-20">{children}</main>
+          <FloatingCTA />
+          <Footer />
+        </LoadingWrapper>
       </body>
     </html>
   )
