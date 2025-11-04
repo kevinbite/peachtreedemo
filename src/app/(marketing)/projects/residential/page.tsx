@@ -90,7 +90,7 @@ export default function ResidentialProjectsPage() {
 
       <CTABanner
         title="Have a Residential Project in Mind?"
-        subtitle="Let's discuss your residential demolition needs and provide a free quote."
+        description="Let's discuss your residential demolition needs and provide a free quote."
       />
     </>
   )

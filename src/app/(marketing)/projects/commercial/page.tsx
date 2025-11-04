@@ -90,7 +90,7 @@ export default function CommercialProjectsPage() {
 
       <CTABanner
         title="Have a Commercial Project in Mind?"
-        subtitle="Let's discuss your commercial demolition needs and timeline."
+        description="Let's discuss your commercial demolition needs and timeline."
       />
     </>
   )
