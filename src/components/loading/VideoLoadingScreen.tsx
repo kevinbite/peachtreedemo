@@ -230,10 +230,6 @@ export function VideoLoadingScreen({
                 height={500}
                 quality={100}
                 className="h-auto w-80 select-none drop-shadow-2xl md:w-[28rem]"
-                style={{
-                  imageRendering: 'high-quality',
-                  WebkitFontSmoothing: 'antialiased',
-                }}
                 priority
                 unoptimized
               />
