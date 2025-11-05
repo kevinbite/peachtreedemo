@@ -1,6 +1,6 @@
 import { Hero } from '@/components/sections/Hero'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { ContactForm } from '@/components/forms/ContactForm'
 
 export const metadata = {
   title: 'Contact Us | Peachtree Demolition',
@@ -30,7 +30,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: 'Hours',
-    details: 'Monday - Friday: 7am - 6pm',
+    details: '24/7',
     link: null,
   },
 ]
@@ -105,117 +105,7 @@ export default function ContactPage() {
                 boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37), 0 0 40px rgba(229, 124, 61, 0.3), 0 0 80px rgba(229, 124, 61, 0.15)',
               }}
             >
-                <form className="space-y-6">
-                  <div className="grid gap-6 md:grid-cols-2">
-                    <div>
-                      <label
-                        htmlFor="name"
-                        className="mb-2 block text-sm font-medium text-gray-200"
-                      >
-                        Full Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        className="focus-ring w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-gray-400"
-                        placeholder="John Doe"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="phone"
-                        className="mb-2 block text-sm font-medium text-gray-200"
-                      >
-                        Phone Number *
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        required
-                        className="focus-ring w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-gray-400"
-                        placeholder="(678) 402-6288"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="mb-2 block text-sm font-medium text-gray-200"
-                    >
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="focus-ring w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-gray-400"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="service"
-                      className="mb-2 block text-sm font-medium text-gray-200"
-                    >
-                      Service Needed *
-                    </label>
-                    <select
-                      id="service"
-                      name="service"
-                      required
-                      className="focus-ring w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white"
-                    >
-                      <option value="" className="bg-gray-900 text-white">Select a service</option>
-                      <option value="commercial" className="bg-gray-900 text-white">Commercial Interior Demo</option>
-                      <option value="concrete" className="bg-gray-900 text-white">Concrete Cutting</option>
-                      <option value="selective" className="bg-gray-900 text-white">Selective Demolition</option>
-                      <option value="mep" className="bg-gray-900 text-white">MEP Support</option>
-                      <option value="other" className="bg-gray-900 text-white">Other</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="message"
-                      className="mb-2 block text-sm font-medium text-gray-200"
-                    >
-                      Project Details *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={6}
-                      className="focus-ring w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-gray-400"
-                      placeholder="Please describe your project, location, timeline, and any specific requirements..."
-                    />
-                  </div>
-
-                  <Button 
-                    type="submit" 
-                    size="lg" 
-                    className="w-full"
-                    style={{
-                      boxShadow: '0 0 30px rgba(229, 124, 61, 0.6), 0 0 60px rgba(229, 124, 61, 0.4)',
-                    }}
-                  >
-                    Send Request
-                  </Button>
-
-                  <p className="text-center text-sm text-gray-400">
-                    By submitting this form, you agree to our{' '}
-                    <a href="#" className="text-orange-500 hover:text-orange-400 hover:underline">
-                      Privacy Policy
-                    </a>
-                    .
-                  </p>
-                </form>
+              <ContactForm />
             </div>
           </div>
         </div>
