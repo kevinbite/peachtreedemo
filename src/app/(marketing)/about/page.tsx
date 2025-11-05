@@ -58,7 +58,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
+      <section className="bg-white py-16 lg:py-24">
         <div className="container-custom">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
@@ -84,6 +84,41 @@ export default function AboutPage() {
                 fill
                 className="object-cover"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Our Founder Section */}
+      <section className="bg-white py-16 lg:py-24">
+        <div className="container-custom">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            {/* Image on Left */}
+            <div className="relative h-96 overflow-hidden rounded-lg lg:h-auto">
+              <Image
+                src="/images/WhatsApp Image 2025-11-05 at 14.05.23_e323c5f5.jpg"
+                alt="Gavin David Johnson - Founder of Peachtree Demolition"
+                fill
+                className="object-cover"
+                style={{ objectPosition: 'center top' }}
+              />
+            </div>
+            {/* Text on Right */}
+            <div>
+              <h2 className="font-heading mb-6 text-3xl font-bold text-gray-900 lg:text-4xl">
+                Meet Our Founder
+              </h2>
+              <div className="space-y-4 text-gray-700">
+                <p>
+                  Gavin David Johnson is a native Atlantan who grew up in Sandy Springs, Georgia, during the 1980s and graduated from Riverwood High School in 1993. After spending his 20s performing in the Atlanta music scene, he transitioned into the residential construction industry, working alongside his father until the 2008 market crash.
+                </p>
+                <p>
+                  Later that year, Gavin joined a local commercial demolition company, where he began learning the ins and outs of the industry. Drawing on his entrepreneurial spirit, he founded Peachtree Demolition in February 2012. Through relentless hard work and a dedication to building lasting client relationships, Gavin has grown Peachtree Demolition into one of the Southeast's leading selective demolition contractors.
+                </p>
+                <p>
+                  Gavin has been married to his wife for 21 years and together they have two amazing teenage daughters.
+                </p>
+              </div>
             </div>
           </div>
         </div>
