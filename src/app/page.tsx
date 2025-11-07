@@ -9,33 +9,45 @@ import { Hammer, Trash2, Truck, Recycle, Shield, Clock, ArrowRight } from 'lucid
 export const metadata = {
   title: 'Atlanta Commercial Interior Demolition | Peachtree Demolition',
   description:
-    'Professional commercial interior demolition in Atlanta. Specializing in Class A office, retail, and institutional interiors. Fast, clean, on schedule. Serving top-tier GCs across the Southeast.',
+    'Professional commercial interior demolition in Atlanta. Specializing in Class A office, medical facilities, hospitality, schools, restaurants, and industrial spaces. Services include soft demo, selective demo, TI, concrete cutting, and slab removal. Serving top-tier GCs across the Southeast.',
 }
 
 const services = [
   {
-    title: 'Interior Selective Demolition',
+    title: 'Soft Demo',
     description:
-      'Precise removal for Class A office, retail, and institutional interiors. We protect what stays while efficiently removing what goes.',
-    icon: Hammer,
-    image: 'https://images.unsplash.com/photo-1590496793907-4c56b1c2f137?q=80&w=800',
-    href: '/services/commercial',
-  },
-  {
-    title: 'Soft Demo & High-Finish Removal',
-    description:
-      'Clean, dust-controlled removal of ceilings, drywall, fixtures, and finishes. Ideal for adaptive reuse and tenant improvements.',
+      'Clean, dust-controlled removal of ceilings, drywall, fixtures, and finishes for occupied buildings and high-finish spaces.',
     icon: Trash2,
-    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800',
-    href: '/services/commercial',
   },
   {
-    title: 'Concrete Cutting & Slab Demo',
+    title: 'Selective Demo',
     description:
-      'Professional concrete sawing, coring, and removal. MEP support for mechanical, electrical, and plumbing coordination.',
+      'Precision demolition for Class A office, retail, and institutional interiors. We protect what stays while efficiently removing what goes.',
+    icon: Hammer,
+  },
+  {
+    title: 'Tenant Improvements (TI)',
+    description:
+      'Fast-track interior demolition for tenant improvement projects with seamless coordination and tight timelines.',
     icon: Truck,
-    image: 'https://images.unsplash.com/photo-1632320323139-d46c206edfbf?q=80&w=800',
-    href: '/services/commercial',
+  },
+  {
+    title: 'Medical & Hospitality',
+    description:
+      'Specialized demolition for medical facilities, hotels, and hospitality venues with strict compliance standards.',
+    icon: Shield,
+  },
+  {
+    title: 'Industrial & Exterior',
+    description:
+      'Heavy-duty demolition for industrial facilities and exterior structure removal for commercial renovations.',
+    icon: Recycle,
+  },
+  {
+    title: 'Concrete Cutting & Slab Removal',
+    description:
+      'Professional concrete sawing, coring, trenching, and slab demolition. Floor grinding and adhesive removal services.',
+    icon: Clock,
   },
 ]
 
@@ -150,30 +162,30 @@ export default function HomePage() {
               What We Deliver
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-700">
-              From soft demo to concrete cutting and MEP support—specializing in Class A office, retail, and institutional interiors across metro Atlanta and the Southeast.
+              Comprehensive commercial demolition services from soft demo to concrete cutting—specializing in Class A office, medical facilities, hospitality, schools, restaurants, and industrial spaces across metro Atlanta and the Southeast.
             </p>
           </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div
                 key={service.title}
-                className="group rounded-lg border border-gray-200/50 bg-white/60 p-8 text-center backdrop-blur-sm transition-all hover:border-orange-500/50 hover:bg-white/80"
+                className="group rounded-lg border border-gray-200/50 bg-white/60 p-6 text-center backdrop-blur-sm transition-all hover:border-orange-500/50 hover:bg-white/80"
                 style={{
                   boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
                 }}
               >
                 <div 
-                  className="mx-auto mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-orange-500/20 text-orange-500 transition-all group-hover:scale-110"
+                  className="mx-auto mb-3 inline-flex h-14 w-14 items-center justify-center rounded-full bg-orange-500/20 text-orange-500 transition-all group-hover:scale-110"
                   style={{
                     boxShadow: '0 0 20px rgba(229, 124, 61, 0.4), 0 0 40px rgba(229, 124, 61, 0.2)',
                   }}
                 >
-                  <service.icon className="h-8 w-8" />
+                  <service.icon className="h-7 w-7" />
                 </div>
-                <h3 className="font-heading mb-2 text-xl font-bold text-gray-900">
+                <h3 className="font-heading mb-2 text-lg font-bold text-gray-900">
                   {service.title}
                 </h3>
-                <p className="text-gray-700">{service.description}</p>
+                <p className="text-sm text-gray-700">{service.description}</p>
               </div>
             ))}
           </div>
