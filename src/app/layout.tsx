@@ -5,6 +5,7 @@ import { LoadingWrapper } from '@/components/loading/LoadingWrapper'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { FloatingCTA } from '@/components/layout/FloatingCTA'
+import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -69,6 +70,7 @@ export default function RootLayout({
           <FloatingCTA />
           <Footer />
         </LoadingWrapper>
+        <Analytics />
       </body>
     </html>
   )
