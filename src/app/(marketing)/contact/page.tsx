@@ -18,8 +18,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    details: 'estimating@peachtreedemo.com',
-    link: 'mailto:estimating@peachtreedemo.com',
+    details: 'Gavin@peachtreedemo.com',
+    link: 'mailto:Gavin@peachtreedemo.com',
   },
   {
     icon: MapPin,
@@ -45,7 +45,7 @@ export default function ContactPage() {
         ctaText="Call Now"
         ctaLink="tel:678-402-6288"
         secondaryCtaText="Email Us"
-        secondaryCtaLink="mailto:estimating@peachtreedemo.com"
+        secondaryCtaLink="mailto:Gavin@peachtreedemo.com"
       />
 
       {/* Contact Info Cards */}

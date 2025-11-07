@@ -47,11 +47,11 @@ export function Footer() {
                   <span>(678) 402-6288</span>
                 </a>
                 <a
-                  href="mailto:estimating@peachtreedemo.com"
+                  href="mailto:Gavin@peachtreedemo.com"
                   className="flex items-center space-x-2 text-gray-400 transition-colors hover:text-orange-500"
                 >
                   <Mail className="h-4 w-4 flex-shrink-0" />
-                  <span>estimating@peachtreedemo.com</span>
+                  <span>Gavin@peachtreedemo.com</span>
                 </a>
                 <div className="flex items-start space-x-2 text-gray-400">
                   <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
