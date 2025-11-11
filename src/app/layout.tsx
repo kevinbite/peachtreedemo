@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
+import Script from 'next/script'
 import '@/styles/globals.css'
 import { LoadingWrapper } from '@/components/loading/LoadingWrapper'
 import { Header } from '@/components/layout/Header'
@@ -64,6 +65,24 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
       <body className="font-sans antialiased">
+        {/* Google Ads Tag */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17719151910"
+        />
+        <Script
+          id="google-ads-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17719151910');
+            `,
+          }}
+        />
+        
         <LoadingWrapper>
           <Header />
           <main className="pt-20">{children}</main>
