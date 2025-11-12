@@ -17,7 +17,16 @@ export function ContactForm() {
     const formData = new FormData(form)
     
     // Add Web3Forms access key
-    formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '')
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY
+    
+    if (!accessKey) {
+      console.error('Web3Forms access key is missing')
+      setSubmitStatus('error')
+      setIsSubmitting(false)
+      return
+    }
+    
+    formData.append('access_key', accessKey)
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
@@ -33,8 +42,8 @@ export function ContactForm() {
         setSubmitStatus('success')
         // Reset form using saved reference
         form.reset()
-        // Reset status after 5 seconds
-        setTimeout(() => setSubmitStatus('idle'), 5000)
+        // Reset status after 8 seconds
+        setTimeout(() => setSubmitStatus('idle'), 8000)
       } else {
         console.error('Form submission failed:', data)
         setSubmitStatus('error')
@@ -51,17 +60,27 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       {/* Success Message */}
       {submitStatus === 'success' && (
-        <div className="rounded-lg bg-green-500/20 border border-green-500/50 p-4 text-green-200">
-          <p className="font-semibold">✓ Message sent successfully!</p>
-          <p className="text-sm">We'll get back to you within 24 hours.</p>
+        <div 
+          className="rounded-lg bg-green-500/20 border-2 border-green-500 p-6 text-green-100 animate-in fade-in slide-in-from-top-2 duration-500"
+          style={{
+            boxShadow: '0 0 20px rgba(34, 197, 94, 0.4), 0 0 40px rgba(34, 197, 94, 0.2)',
+          }}
+        >
+          <p className="text-lg font-bold mb-1">✓ Message Sent Successfully!</p>
+          <p className="text-sm text-green-200">Thank you for contacting us. We'll get back to you within 24 hours.</p>
         </div>
       )}
 
       {/* Error Message */}
       {submitStatus === 'error' && (
-        <div className="rounded-lg bg-red-500/20 border border-red-500/50 p-4 text-red-200">
-          <p className="font-semibold">✗ Failed to send message</p>
-          <p className="text-sm">Please try again or call us directly.</p>
+        <div 
+          className="rounded-lg bg-red-500/20 border-2 border-red-500 p-6 text-red-100 animate-in fade-in slide-in-from-top-2 duration-500"
+          style={{
+            boxShadow: '0 0 20px rgba(239, 68, 68, 0.4), 0 0 40px rgba(239, 68, 68, 0.2)',
+          }}
+        >
+          <p className="text-lg font-bold mb-1">✗ Failed to Send Message</p>
+          <p className="text-sm text-red-200">Please try again or call us directly at (678) 402-6288.</p>
         </div>
       )}
 
