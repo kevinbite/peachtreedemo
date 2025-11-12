@@ -1,89 +1,39 @@
 import { Hero } from '@/components/sections/Hero'
-import { ProjectCard } from '@/components/sections/ProjectCard'
 import { CTABanner } from '@/components/sections/CTABanner'
+import { Clock } from 'lucide-react'
 
 export const metadata = {
   title: 'Residential Projects | Peachtree Demolition',
   description:
-    'Explore our completed residential demolition projects across Georgia. Safe, efficient demolition for homes and residential properties.',
+    'Residential project portfolio coming soon. Contact us to learn more about our residential demolition services.',
 }
-
-const projects = [
-  {
-    title: 'Buckhead Home Renovation',
-    location: 'Atlanta, GA',
-    date: 'December 2024',
-    description:
-      'Complete interior demolition for luxury home renovation including kitchen, bathrooms, and master suite.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800',
-  },
-  {
-    title: 'Virginia Highland Teardown',
-    location: 'Atlanta, GA',
-    date: 'November 2024',
-    description:
-      'Full structure demolition for single-family home rebuild on historic lot.',
-    image: 'https://images.unsplash.com/photo-1590496793907-4c56b1c2f137?q=80&w=800',
-  },
-  {
-    title: 'Decatur Basement Conversion',
-    location: 'Decatur, GA',
-    date: 'October 2024',
-    description:
-      'Selective demolition for finished basement conversion to living space.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800',
-  },
-  {
-    title: 'Marietta Kitchen Remodel',
-    location: 'Marietta, GA',
-    date: 'September 2024',
-    description:
-      'Kitchen and dining room demolition for open-concept renovation.',
-    image: 'https://images.unsplash.com/photo-1590496793573-558b73619c77?q=80&w=800',
-  },
-  {
-    title: 'Roswell Pool Removal',
-    location: 'Roswell, GA',
-    date: 'August 2024',
-    description:
-      'In-ground pool demolition and yard restoration for backyard transformation.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800',
-  },
-  {
-    title: 'Sandy Springs Garage Demo',
-    location: 'Sandy Springs, GA',
-    date: 'July 2024',
-    description:
-      'Detached garage and shed removal for new construction preparation.',
-    image: 'https://images.unsplash.com/photo-1590496793907-4c56b1c2f137?q=80&w=800',
-  },
-]
 
 export default function ResidentialProjectsPage() {
   return (
     <>
       <Hero
         title="Residential Project Portfolio"
-        subtitle="Explore our completed residential demolition projects across Georgia. From full home demolitions to selective interior work, we handle it all safely and efficiently."
-        backgroundImage="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070"
+        subtitle="We provide professional residential demolition services across Georgia. From full home demolitions to selective interior work, we handle it all safely and efficiently."
+        backgroundImage="/images/residential-services.jpg"
       />
 
-      {/* Projects Grid */}
-      <section className="bg-white py-16 lg:py-24">
+      {/* Coming Soon Section */}
+      <section className="bg-white py-24 lg:py-32">
         <div className="container-custom">
-          <div className="mb-12 text-center">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full bg-orange-500/10">
+              <Clock className="h-10 w-10 text-orange-500" />
+            </div>
             <h2 className="font-heading mb-4 text-3xl font-bold text-gray-900 lg:text-4xl">
-              Featured Residential Projects
+              Residential Projects Coming Soon
             </h2>
-            <p className="mx-auto max-w-2xl text-lg text-gray-600">
-              A selection of our recent residential projects showcasing our attention to detail and commitment to customer satisfaction.
+            <p className="mb-8 text-lg text-gray-600">
+              We're currently updating our residential project portfolio. While our focus is commercial interior demolition, 
+              we also provide professional residential demolition services for homeowners and contractors across Georgia.
             </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} {...project} />
-            ))}
+            <p className="text-base text-gray-600">
+              Interested in residential demolition services? Contact us today to discuss your project and receive a free quote.
+            </p>
           </div>
         </div>
       </section>

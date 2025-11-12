@@ -71,28 +71,28 @@ const features = [
 
 const projects = [
   {
-    title: 'Class A Office Tower Interior Demo',
-    location: 'Midtown Atlanta, GA',
-    date: 'January 2025',
-    description:
-      '45,000 SF selective interior demolition for tenant improvement. Fast mobilization with zero schedule delays for tier-one GC partner.',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800',
+    title: '999 Peachtree St – Project Patriot',
+    type: 'Class A Office Tower. Interior, Selective Demo, Exterior Selective Demo, Concrete Removal',
+    location: 'Atlanta, GA',
+    date: 'April 2024',
+    gc: 'HITT Contracting Inc',
+    image: '/images/unnamed (25).jpg',
   },
   {
-    title: 'Retail Adaptive Reuse',
-    location: 'Buckhead, GA',
+    title: 'World of Coca-Cola',
+    type: 'Soft / Selective Demo, Concrete Removal',
+    location: 'Marietta, GA',
     date: 'December 2024',
-    description:
-      'High-finish interior removal and MEP coordination for luxury retail conversion. Clean, dust-controlled work in occupied building.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800',
+    gc: 'CA South LLC',
+    image: '/images/unnamed (12).jpg',
   },
   {
-    title: 'Corporate Headquarters Renovation',
-    location: 'Sandy Springs, GA',
-    date: 'November 2024',
-    description:
-      'Multi-floor interior selective demolition with concrete cutting and slab removal. Completed 2 weeks ahead of schedule.',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800',
+    title: 'UTI Atlanta',
+    type: 'Soft Demo, Industrial, 150,000 sqft, 110,000sqft of raised computer flooring, Floor Grinding',
+    location: 'Atlanta, GA',
+    date: 'August 2025',
+    gc: 'Humphries and Company',
+    image: '/images/UTIprojectpic.JPG',
   },
 ]
 
