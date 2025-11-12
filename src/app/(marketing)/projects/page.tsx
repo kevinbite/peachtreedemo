@@ -5,81 +5,81 @@ import { CTABanner } from '@/components/sections/CTABanner'
 export const metadata = {
   title: 'Our Projects | Peachtree Demolition',
   description:
-    'View our portfolio of completed demolition projects across Georgia. Residential, commercial, and industrial work.',
+    'View our portfolio of completed commercial interior demolition projects across Atlanta and the Southeast.',
 }
 
 const projects = [
   {
-    title: 'Downtown Office Complex Demolition',
-    location: 'Atlanta, GA',
-    date: 'November 2024',
-    description:
-      'Complete structural demolition of a 5-story office building in downtown Atlanta. Project included asbestos abatement, controlled demolition, and site preparation for new development.',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800',
+    title: 'Charleston Millhouse',
+    type: 'Historic Hotel, Hospitality, Common Areas & 212 rooms',
+    location: 'Charleston, SC',
+    date: 'August 2022',
+    gc: 'Nix-Unger Construction',
+    image: '/images/unnamed (1).jpg',
   },
   {
-    title: 'Residential Home Teardown',
+    title: 'World of Coca-Cola',
+    type: 'Soft / Selective Demo, Concrete Removal',
     location: 'Marietta, GA',
-    date: 'October 2024',
-    description:
-      'Full residential demolition including foundation removal and site clearing. Recycled over 85% of materials including wood, metal, and concrete.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800',
+    date: 'December 2024',
+    gc: 'CA South LLC',
+    image: '/images/unnamed (12).jpg',
   },
   {
-    title: 'Industrial Warehouse Demolition',
-    location: 'Decatur, GA',
-    date: 'September 2024',
-    description:
-      '45,000 square foot industrial warehouse demolished and site prepared for redevelopment. Completed 2 weeks ahead of schedule.',
-    image: 'https://images.unsplash.com/photo-1590496793573-558b73619c77?q=80&w=800',
+    title: 'Digital Realty - Google',
+    type: 'Soft Demo, 4ft computer flooring',
+    location: 'Marietta, GA',
+    date: 'November 2017',
+    gc: 'LEL International Inc',
+    image: '/images/unnamed (10).jpg',
   },
   {
-    title: 'Shopping Center Renovation',
+    title: 'Nalley Infinity of Marietta',
+    type: 'Car Dealership, Complete face lift, Interior and Exterior, 2 story curtain wall',
+    location: 'Marietta, GA',
+    date: 'June 2013',
+    gc: 'Choate Construction Company',
+    image: '/images/unnamed (15).jpg',
+  },
+  {
+    title: 'Roswell Highschool',
+    type: 'School System, Mechanical Upgrade, Selective Demo',
     location: 'Roswell, GA',
-    date: 'August 2024',
-    description:
-      'Selective interior demolition for major shopping center renovation. Removed 12 interior walls while maintaining structural integrity.',
-    image: 'https://images.unsplash.com/photo-1632320323139-d46c206edfbf?q=80&w=800',
+    date: 'June 2015',
+    gc: 'Evergreen Construction Company',
+    image: '/images/unnamed (8).jpg',
   },
   {
-    title: 'Concrete Parking Lot Removal',
-    location: 'Sandy Springs, GA',
-    date: 'July 2024',
-    description:
-      'Removed 30,000 sq ft of deteriorated concrete parking lot. Recycled all materials for use as road base on new construction.',
-    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=800',
+    title: 'HL Green Discovery',
+    type: 'Concrete Cutting, Slab Removal 15,000sqft',
+    location: 'Atlanta, GA',
+    date: 'October 2025',
+    gc: 'Leapley Construction Group',
+    image: '/images/HLGREENproject.jpg',
   },
   {
-    title: 'School Building Demolition',
-    location: 'Alpharetta, GA',
-    date: 'June 2024',
-    description:
-      'Safe demolition of outdated school building during summer break. Included hazardous material abatement and complete site restoration.',
-    image: 'https://images.unsplash.com/photo-1590496793907-4c56b1c2f137?q=80&w=800',
+    title: 'UTI Atlanta',
+    type: 'Soft Demo, Industrial, 150,000 sqft, 110,000sqft of raised computer flooring, Floor Grinding',
+    location: 'Atlanta, GA',
+    date: 'August 2025',
+    gc: 'Humphries and Company',
+    image: '/images/UTIprojectpic.JPG',
   },
   {
-    title: 'Bridge Demolition & Removal',
-    location: 'Gwinnett County, GA',
-    date: 'May 2024',
-    description:
-      'Controlled demolition of aging concrete bridge structure. Coordinated with DOT for safe execution with minimal traffic disruption.',
-    image: 'https://images.unsplash.com/photo-1628182316384-c7dae12f1975?q=80&w=800',
-  },
-  {
-    title: 'Restaurant Interior Renovation',
-    location: 'Buckhead, GA',
+    title: '999 Peachtree St – Project Patriot',
+    type: 'Class A Office Tower. Interior, Selective Demo, Exterior Selective Demo, Concrete Removal',
+    location: 'Atlanta, GA',
     date: 'April 2024',
-    description:
-      'Complete interior demolition for upscale restaurant remodel. Careful removal of existing fixtures while preserving historic facade.',
-    image: 'https://images.unsplash.com/photo-1614853316476-de00d14cb1fc?q=80&w=800',
+    gc: 'HITT Contracting Inc',
+    image: '/images/unnamed (25).jpg',
   },
   {
-    title: 'Multi-Family Housing Demolition',
-    location: 'Athens, GA',
-    date: 'March 2024',
-    description:
-      'Demolished 8-unit apartment building for new mixed-use development. Recycled 90% of demolition materials.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800',
+    title: 'FISERV',
+    type: '2 – 6 story buildings, Soft Demo, Selective Salvage of all carpet for recycling for LEEDS Certified Project',
+    location: 'Atlanta, GA',
+    date: 'July 2015',
+    gc: 'Choate Construction Company',
+    image: '/images/FISERVproject.jpg',
   },
 ]
 
@@ -87,9 +87,9 @@ export default function ProjectsPage() {
   return (
     <>
       <Hero
-        title="Our Project Portfolio"
-        subtitle="Explore our completed demolition projects across Georgia. From small residential teardowns to large commercial structures."
-        backgroundImage="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070"
+        title="Commercial Project Portfolio"
+        subtitle="Explore our completed commercial interior demolition projects across the Southeast. From Class A offices to adaptive reuse, we deliver precision and speed."
+        backgroundImage="/images/commercial-page-pic.png"
       />
 
       {/* Stats Section */}
@@ -116,10 +116,10 @@ export default function ProjectsPage() {
         <div className="container-custom">
           <div className="mb-12">
             <h2 className="font-heading mb-4 text-3xl font-bold text-gray-900 lg:text-4xl">
-              Recent Projects
+              Featured Commercial Projects
             </h2>
             <p className="max-w-2xl text-lg text-gray-600">
-              Each project showcases our commitment to safety, quality, and customer satisfaction.
+              A selection of our recent commercial interior demolition projects showcasing our expertise and commitment to excellence.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
