@@ -40,11 +40,11 @@ export function Footer() {
               </p>
               <div className="space-y-2.5 text-sm">
                 <a
-                  href="tel:678-402-6288"
+                  href="tel:404-245-0111"
                   className="flex items-center space-x-2 text-gray-400 transition-colors hover:text-orange-500"
                 >
                   <Phone className="h-4 w-4 flex-shrink-0" />
-                  <span>(678) 402-6288</span>
+                  <span>(404) 245-0111</span>
                 </a>
                 <a
                   href="mailto:Gavin@peachtreedemo.com"

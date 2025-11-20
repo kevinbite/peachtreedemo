@@ -85,7 +85,7 @@ export function Hero({
       {stats && stats.length > 0 && (
         <div className="absolute bottom-0 left-0 right-0 z-20 bg-black/90 backdrop-blur-sm">
           <div className="container-custom py-8">
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 md:gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="font-heading mb-1 text-3xl font-bold text-white md:text-4xl">

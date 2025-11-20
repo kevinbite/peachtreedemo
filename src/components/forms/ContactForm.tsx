@@ -80,7 +80,7 @@ export function ContactForm() {
           }}
         >
           <p className="text-lg font-bold mb-1">✗ Failed to Send Message</p>
-          <p className="text-sm text-red-200">Please try again or call us directly at (678) 402-6288.</p>
+          <p className="text-sm text-red-200">Please try again or call us directly at (404) 245-0111.</p>
         </div>
       )}
 
@@ -114,7 +114,7 @@ export function ContactForm() {
             name="phone"
             required
             className="focus-ring w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-gray-400"
-            placeholder="(678) 402-6288"
+            placeholder="(404) 245-0111"
           />
         </div>
       </div>

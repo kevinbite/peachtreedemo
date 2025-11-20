@@ -5,15 +5,15 @@ import { ContactForm } from '@/components/forms/ContactForm'
 export const metadata = {
   title: 'Contact Us | Peachtree Demolition',
   description:
-    'Get a free quote for your commercial interior demolition project. Call (678) 402-6288 or fill out our contact form. Serving Atlanta and the Southeast.',
+    'Get a free quote for your commercial interior demolition project. Call (404) 245-0111 or fill out our contact form. Serving Atlanta and the Southeast.',
 }
 
 const contactInfo = [
   {
     icon: Phone,
     title: 'Phone',
-    details: '(678) 402-6288',
-    link: 'tel:678-402-6288',
+    details: '(404) 245-0111',
+    link: 'tel:404-245-0111',
   },
   {
     icon: Mail,
@@ -43,7 +43,7 @@ export default function ContactPage() {
         subtitle="Ready to start your demolition project? Contact us for a free, no-obligation quote. Our team responds within 24 hours."
         backgroundImage="/images/pdemo-background-logo.jpeg"
         ctaText="Call Now"
-        ctaLink="tel:678-402-6288"
+        ctaLink="tel:404-245-0111"
         secondaryCtaText="Email Us"
         secondaryCtaLink="mailto:Gavin@peachtreedemo.com"
       />

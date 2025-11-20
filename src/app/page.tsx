@@ -107,9 +107,8 @@ export default function HomePage() {
         secondaryCtaLink="/about"
         stats={[
           { value: '20+', label: 'Years of Experience' },
-          { value: '100+', label: 'Projects Completed' },
-          { value: '30+', label: 'Trusted Partners' },
-          { value: '100%', label: 'Customer Satisfaction' },
+          { value: '500+', label: 'Projects Completed' },
+          { value: '100+', label: 'Trusted Partners' },
         ]}
       />
 
