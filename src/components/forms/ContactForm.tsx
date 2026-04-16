@@ -114,7 +114,7 @@ export function ContactForm() {
             name="phone"
             required
             className="focus-ring w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-gray-400"
-            placeholder="(404) 245-0111"
+            placeholder="(678) 402-6298"
           />
         </div>
       </div>
