@@ -41,7 +41,7 @@ export function CTABanner({
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <a href="tel:404-245-0111">
+            <a href="tel:678-402-6298">
               <Button size="lg" variant="outline" className="w-full border-white text-white hover:bg-white hover:text-orange-500 sm:w-auto">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now
