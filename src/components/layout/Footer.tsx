@@ -44,7 +44,7 @@ export function Footer() {
                   className="flex items-center space-x-2 text-gray-400 transition-colors hover:text-orange-500"
                 >
                   <Phone className="h-4 w-4 flex-shrink-0" />
-                  <span>(404) 245-0111</span>
+                  <span>(678) 402-6298</span>
                 </a>
                 <a
                   href="mailto:Gavin@peachtreedemo.com"
